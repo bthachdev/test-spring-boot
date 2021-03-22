@@ -1,3 +1,5 @@
-/Users/thach/Projects/CFS Management Service/services/cfs/src/main/java/com/example/cfs/controllers/CFSEventController.java
-/Users/thach/Projects/CFS Management Service/services/cfs/src/main/java/com/example/cfs/models/CFSEvent.java
-/Users/thach/Projects/CFS Management Service/services/cfs/src/main/java/com/example/cfs/CfsApplication.java
+/Users/thach/Projects/CFS Management Service/services/user/src/main/java/com/example/user/controllers/UserController.java
+/Users/thach/Projects/CFS Management Service/services/user/src/main/java/com/example/user/services/UserService.java
+/Users/thach/Projects/CFS Management Service/services/user/src/main/java/com/example/user/repositories/UserRepository.java
+/Users/thach/Projects/CFS Management Service/services/user/src/main/java/com/example/user/UserApplication.java
+/Users/thach/Projects/CFS Management Service/services/user/src/main/java/com/example/user/models/User.java
