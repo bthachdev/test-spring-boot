@@ -17,6 +17,8 @@ public class CFSEvent {
     private String eventTypeCode;
     private LocalDateTime eventTime;
     private LocalDateTime dispatchTime;
+    private UUID agencyID;
+    private UUID userID;
 
     public UUID getId() { return id; }
     public void setId(UUID id) { this.id = id; }
@@ -32,4 +34,10 @@ public class CFSEvent {
 
     public LocalDateTime getDispatchTime() { return dispatchTime; }
     public void setDispatchTime(LocalDateTime dispatchTime) { this.dispatchTime = dispatchTime; }
+
+    public UUID getAgencyID() { return agencyID; }
+    public void setAgencyID(UUID agencyID) { this.agencyID = agencyID; }
+
+    public UUID getUserID() { return userID; }
+    public void setUserID(UUID userID) { this.agencyID = userID; }
 }
