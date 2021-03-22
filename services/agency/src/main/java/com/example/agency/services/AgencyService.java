@@ -14,6 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
+import java.util.Optional;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
+import org.aspectj.bridge.MessageUtil;
 
 @Service
 public class AgencyService {
@@ -22,5 +26,9 @@ public class AgencyService {
 
     public void saveAgency(Agency agency) {
         agencyRepository.save(agency);
+    }
+
+    public Optional<Agency> getAgency(UUID agencyID) {
+        return agencyRepository.findById(agencyID);
     }
 }

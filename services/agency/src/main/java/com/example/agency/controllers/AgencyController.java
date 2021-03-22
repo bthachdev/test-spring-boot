@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.format.annotation.DateTimeFormat;
 import java.util.List;
+import java.util.UUID;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(value="v1/agencies")
@@ -31,5 +33,13 @@ public class AgencyController {
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public void saveAgency(@RequestBody Agency agency) {
         agencyService.saveAgency(agency);
+    }
+
+    /**
+     * Query a agency by the agency UUID.
+     */
+    @RequestMapping(value="/{agencyID}", method = RequestMethod.GET)
+    public Optional<Agency> getAgency(@PathVariable("agencyID") UUID agencyID) {
+        return agencyService.getAgency(agencyID);
     }
 }
