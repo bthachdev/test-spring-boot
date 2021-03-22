@@ -1,0 +1,5 @@
+com/example/cfs/controllers/CFSEventController.class
+com/example/cfs/CFSApplication.class
+com/example/cfs/services/CFSEventService.class
+com/example/cfs/models/CFSEvent.class
+com/example/cfs/repositories/CFSEventRepository.class
